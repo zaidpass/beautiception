@@ -89,14 +89,15 @@
 
 <nav>
   <a class="logo" href="index.html">@bea<span>Urooj</span></a>
-  <ul>
+  <ul id="navMenu">
     <li><a href="index.html">Home</a></li>
     <li><a href="brands.html">For Brands</a></li>
     <li><a class="active" href="clients.html">For Clients</a></li>
     <li><a href="about.html">About Me</a></li>
     <li><a href="contact.html">Contact</a></li>
   </ul>
-  <a class="btn solid" href="contact.html">Book Now</a>
+  <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu"><span></span><span></span><span></span></button>
+  <a class="btn solid" href="contact.html#book">Book Now</a>
 </nav>
 
 <div class="page-head">
@@ -165,7 +166,7 @@
 
 <section id="pricing">
   <div class="wrap">
-    <div class="acc-item">
+    <div class="acc-item open">
       <div class="acc-head" onclick="this.parentNode.classList.toggle('open')">
         <h3>Services & <em>pricing</em></h3>
         <span class="hint">Bridal · party · photoshoot</span>
@@ -271,6 +272,13 @@ document.querySelectorAll('.carousel').forEach(car => {
   <span>© 2026 @beaUrooj — Urooj Hussain</span>
   <span><a href="https://www.instagram.com/beaurooj/">Instagram</a> · <a href="https://www.tiktok.com/@beaurooj">TikTok</a> · <a href="mailto:info@beautiception.com">info@beautiception.com</a></span>
 </footer>
+
+<script>
+(function(){var t=document.querySelector('.nav-toggle'),m=document.getElementById('navMenu');if(!t||!m)return;t.addEventListener('click',function(){var o=m.classList.toggle('open');t.setAttribute('aria-expanded',o);t.setAttribute('aria-label',o?'Close menu':'Open menu');});m.addEventListener('click',function(e){if(e.target.tagName==='A')m.classList.remove('open');});})();
+</script>
+<script>
+document.querySelectorAll('.acc-head,.cat-card').forEach(function(el){el.setAttribute('tabindex','0');el.setAttribute('role','button');el.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();el.click();}});});
+</script>
 
 </body>
 </html>

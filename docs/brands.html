@@ -93,14 +93,15 @@
 
 <nav>
   <a class="logo" href="index.html">@bea<span>Urooj</span></a>
-  <ul>
+  <ul id="navMenu">
     <li><a href="index.html">Home</a></li>
     <li><a class="active" href="brands.html">For Brands</a></li>
     <li><a href="clients.html">For Clients</a></li>
     <li><a href="about.html">About Me</a></li>
     <li><a href="contact.html">Contact</a></li>
   </ul>
-  <a class="btn solid" href="contact.html">Book Now</a>
+  <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu"><span></span><span></span><span></span></button>
+  <a class="btn solid" href="contact.html#book">Book Now</a>
 </nav>
 
 <div class="page-head">
@@ -108,6 +109,10 @@
   <h1>For <em>Brands</em></h1>
   <p>Campaigns, UGC and collaborations as a beauty content creator in Dubai & the UAE — reaching an engaged beauty, skincare, motherhood and hair audience across the UAE and Canada.</p>
   <div class="avail" style="margin-top:22px"><span class="dot"></span> Selectively partnering with a small number of brands that align with my values</div>
+  <div class="cta-row" style="justify-content:center;margin-top:22px">
+    <a class="btn solid" href="#ratecard" onclick="var r=document.querySelector('#ratecard .acc-item');if(r)r.classList.add('open')">View Rate Card</a>
+    <a class="btn wa" href="https://wa.me/971585588186?text=Hi%20Urooj%2C%20I%27d%20like%20to%20request%20your%20rate%20card%20for%20a%20brand%20collaboration.">Request on WhatsApp</a>
+  </div>
 </div>
 
 <div class="stats">
@@ -195,33 +200,33 @@
 
     <div class="panel show" id="beauty">
       <div class="camp-grid">
-        <div class="camp"><iframe src="https://www.instagram.com/reel/DU3ed82EtWO/embed/" style="width:100%;aspect-ratio:9/16;border:none;display:block" allow="fullscreen" title="Sephora collaboration by @beaurooj"></iframe><div class="body"><span class="type">Sephora</span><p>Ramadan Campaign</p></div></div>
-        <div class="camp"><iframe src="https://www.instagram.com/reel/DO6UaTZkoNo/embed/" style="width:100%;aspect-ratio:9/16;border:none;display:block" allow="fullscreen" title="Anastasia Beverly Hills collaboration by @beaurooj"></iframe><div class="body"><span class="type">Anastasia Beverly Hills & Sephora</span><p>New product launch - MicroStroke brow pen</p></div></div>
-        <div class="camp"><iframe src="https://www.instagram.com/reel/DHELM22POuw/embed/" style="width:100%;aspect-ratio:9/16;border:none;display:block" allow="fullscreen" title="Flormar collaboration by @beaurooj"></iframe><div class="body"><span class="type">Flormar</span><p>Get Ready With Me(GRWM) campaign</p></div></div>
+        <div class="camp"><iframe src="https://www.instagram.com/reel/DU3ed82EtWO/embed/" style="width:100%;aspect-ratio:9/16;border:none;display:block" loading="lazy" allow="fullscreen" title="Sephora collaboration by @beaurooj"></iframe><div class="body"><span class="type">Sephora</span><p>Ramadan Campaign</p></div></div>
+        <div class="camp"><iframe src="https://www.instagram.com/reel/DO6UaTZkoNo/embed/" style="width:100%;aspect-ratio:9/16;border:none;display:block" loading="lazy" allow="fullscreen" title="Anastasia Beverly Hills collaboration by @beaurooj"></iframe><div class="body"><span class="type">Anastasia Beverly Hills & Sephora</span><p>New product launch - MicroStroke brow pen</p></div></div>
+        <div class="camp"><iframe src="https://www.instagram.com/reel/DHELM22POuw/embed/" style="width:100%;aspect-ratio:9/16;border:none;display:block" loading="lazy" allow="fullscreen" title="Flormar collaboration by @beaurooj"></iframe><div class="body"><span class="type">Flormar</span><p>Get Ready With Me(GRWM) campaign</p></div></div>
       </div>
     </div>
 
     <div class="panel" id="skincare">
       <div class="camp-grid">
-        <div class="camp"><iframe src="https://www.tiktok.com/embed/v2/7527732145335454981" style="width:100%;aspect-ratio:9/16;border:none;display:block" allow="fullscreen" title="Erborian collaboration by @beaurooj"></iframe><div class="body"><span class="type">Erborian</span><p>Promoting summer skincare essentials</p></div></div>
-        <div class="camp"><iframe src="https://www.tiktok.com/embed/v2/7608239961975885064" style="width:100%;aspect-ratio:9/16;border:none;display:block" allow="fullscreen" title="Skincare & lifestyle content by @beaUrooj"></iframe><div class="body"><span class="type">Eid Campaign</span><p>Viral Eid hair tutorial</p></div></div>
-        <div class="camp"><iframe src="https://www.instagram.com/reel/DXpDF1bDHEz/embed/" style="width:100%;aspect-ratio:9/16;border:none;display:block" allow="fullscreen" title="Philips collaboration by @beaUrooj"></iframe><div class="body"><span class="type">Philips</span><p>Promoting product “Philips Facial Hair Remover”</p></div></div>
+        <div class="camp"><iframe src="https://www.tiktok.com/embed/v2/7527732145335454981" style="width:100%;aspect-ratio:9/16;border:none;display:block" loading="lazy" allow="fullscreen" title="Erborian collaboration by @beaurooj"></iframe><div class="body"><span class="type">Erborian</span><p>Promoting summer skincare essentials</p></div></div>
+        <div class="camp"><iframe src="https://www.tiktok.com/embed/v2/7608239961975885064" style="width:100%;aspect-ratio:9/16;border:none;display:block" loading="lazy" allow="fullscreen" title="Skincare & lifestyle content by @beaUrooj"></iframe><div class="body"><span class="type">Eid Campaign</span><p>Viral Eid hair tutorial</p></div></div>
+        <div class="camp"><iframe src="https://www.instagram.com/reel/DXpDF1bDHEz/embed/" style="width:100%;aspect-ratio:9/16;border:none;display:block" loading="lazy" allow="fullscreen" title="Philips collaboration by @beaUrooj"></iframe><div class="body"><span class="type">Philips</span><p>Promoting product “Philips Facial Hair Remover”</p></div></div>
       </div>
     </div>
 
     <div class="panel" id="motherhood">
       <div class="camp-grid">
-        <div class="camp"><iframe src="https://www.tiktok.com/embed/v2/7631289415284854024" style="width:100%;aspect-ratio:9/16;border:none;display:block" allow="fullscreen" title="Pampers collaboration by @beaurooj"></iframe><div class="body"><span class="type">Pampers</span><p>New product launch - Pampers Luxury diapers</p></div></div>
-        <div class="camp"><iframe src="https://www.instagram.com/reel/C92fCG8voUz/embed/" style="width:100%;aspect-ratio:9/16;border:none;display:block" allow="fullscreen" title="Pureborn collaboration by @beaurooj"></iframe><div class="body"><span class="type">Pureborn</span><p>Newborn diaper campaign</p></div></div>
-        <div class="camp"><iframe src="https://www.instagram.com/reel/DMDe9xdPPuy/embed/" style="width:100%;aspect-ratio:9/16;border:none;display:block" allow="fullscreen" title="UppaBaby collaboration by @beaurooj"></iframe><div class="body"><span class="type">UppaBaby</span><p>Product promotion “UppaBaby Minu” travel stroller</p></div></div>
+        <div class="camp"><iframe src="https://www.tiktok.com/embed/v2/7631289415284854024" style="width:100%;aspect-ratio:9/16;border:none;display:block" loading="lazy" allow="fullscreen" title="Pampers collaboration by @beaurooj"></iframe><div class="body"><span class="type">Pampers</span><p>New product launch - Pampers Luxury diapers</p></div></div>
+        <div class="camp"><iframe src="https://www.instagram.com/reel/C92fCG8voUz/embed/" style="width:100%;aspect-ratio:9/16;border:none;display:block" loading="lazy" allow="fullscreen" title="Pureborn collaboration by @beaurooj"></iframe><div class="body"><span class="type">Pureborn</span><p>Newborn diaper campaign</p></div></div>
+        <div class="camp"><iframe src="https://www.instagram.com/reel/DMDe9xdPPuy/embed/" style="width:100%;aspect-ratio:9/16;border:none;display:block" loading="lazy" allow="fullscreen" title="UppaBaby collaboration by @beaurooj"></iframe><div class="body"><span class="type">UppaBaby</span><p>Product promotion “UppaBaby Minu” travel stroller</p></div></div>
       </div>
     </div>
 
     <div class="panel" id="lifestyle">
       <div class="camp-grid">
-        <div class="camp"><iframe src="https://www.instagram.com/reel/DSicMeZE6q9/embed/" style="width:100%;aspect-ratio:9/16;border:none;display:block" allow="fullscreen" title="Hair content by @beaurooj"></iframe><div class="body"><span class="type">Hair · Reel</span><p>Hair content and styling — watch the reel above.</p></div></div>
-        <div class="camp"><iframe src="https://www.tiktok.com/embed/v2/7568949656022011143" style="width:100%;aspect-ratio:9/16;border:none;display:block" allow="fullscreen" title="Hair content by @beaurooj"></iframe><div class="body"><span class="type">Hair · TikTok</span><p>Hair content and styling — watch above.</p></div></div>
-        <div class="camp"><iframe src="https://www.tiktok.com/embed/v2/7643149990826626312" style="width:100%;aspect-ratio:9/16;border:none;display:block" allow="fullscreen" title="Hair content by @beaUrooj"></iframe><div class="body"><span class="type">Hair · TikTok</span><p>Hair content and styling — watch above.</p></div></div>
+        <div class="camp"><iframe src="https://www.instagram.com/reel/DSicMeZE6q9/embed/" style="width:100%;aspect-ratio:9/16;border:none;display:block" loading="lazy" allow="fullscreen" title="Hair content by @beaurooj"></iframe><div class="body"><span class="type">Hair · Reel</span><p>Hair content and styling — watch the reel above.</p></div></div>
+        <div class="camp"><iframe src="https://www.tiktok.com/embed/v2/7568949656022011143" style="width:100%;aspect-ratio:9/16;border:none;display:block" loading="lazy" allow="fullscreen" title="Hair content by @beaurooj"></iframe><div class="body"><span class="type">Hair · TikTok</span><p>Hair content and styling — watch above.</p></div></div>
+        <div class="camp"><iframe src="https://www.tiktok.com/embed/v2/7643149990826626312" style="width:100%;aspect-ratio:9/16;border:none;display:block" loading="lazy" allow="fullscreen" title="Hair content by @beaUrooj"></iframe><div class="body"><span class="type">Hair · TikTok</span><p>Hair content and styling — watch above.</p></div></div>
       </div>
     </div>
   </div>
@@ -360,6 +365,13 @@ function showPanel(id, card){
     stats.insertAdjacentElement('afterend',logos);
   }
 })();
+</script>
+
+<script>
+(function(){var t=document.querySelector('.nav-toggle'),m=document.getElementById('navMenu');if(!t||!m)return;t.addEventListener('click',function(){var o=m.classList.toggle('open');t.setAttribute('aria-expanded',o);t.setAttribute('aria-label',o?'Close menu':'Open menu');});m.addEventListener('click',function(e){if(e.target.tagName==='A')m.classList.remove('open');});})();
+</script>
+<script>
+document.querySelectorAll('.acc-head,.cat-card').forEach(function(el){el.setAttribute('tabindex','0');el.setAttribute('role','button');el.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();el.click();}});});
 </script>
 
 </body>

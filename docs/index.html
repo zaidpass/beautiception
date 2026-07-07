@@ -79,7 +79,7 @@
   .teaser .card-lite h3{color:#2b2620;text-shadow:0 1px 3px rgba(255,253,250,.95)}
   .teaser .card-lite p{color:#4a4038;font-weight:500;text-shadow:0 1px 3px rgba(255,253,250,.95)}
   .teaser .card-lite .num,.teaser .card-lite .arrow{text-shadow:0 1px 3px rgba(255,253,250,.95)}
-  @media(max-width:900px){.hero{grid-template-columns:1fr}.teaser{grid-template-columns:1fr}.float-card{left:10px}.hero h1{font-size:40px}}
+  @media(max-width:900px){.hero{grid-template-columns:1fr;padding:40px 0 40px}.teaser{grid-template-columns:1fr}.float-card{left:10px}.hero h1{font-size:32px}}
   /* Brand logo marquee */
   .logos-sec{padding:50px 0;border-top:1px solid #f0e2dc;border-bottom:1px solid #f0e2dc;margin-top:8px}
   .marquee-wrap{position:relative;overflow:hidden;mask-image:linear-gradient(90deg,transparent 0,#000 80px,#000 calc(100% - 80px),transparent 100%);-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 80px,#000 calc(100% - 80px),transparent 100%)}
@@ -98,14 +98,15 @@
 
 <nav>
   <a class="logo" href="index.html">@bea<span>Urooj</span></a>
-  <ul>
+  <ul id="navMenu">
     <li><a class="active" href="index.html">Home</a></li>
     <li><a href="brands.html">For Brands</a></li>
     <li><a href="clients.html">For Clients</a></li>
     <li><a href="about.html">About Me</a></li>
     <li><a href="contact.html">Contact</a></li>
   </ul>
-  <a class="btn solid" href="contact.html">Book Now</a>
+  <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu"><span></span><span></span><span></span></button>
+  <a class="btn solid" href="contact.html#book">Book Now</a>
 </nav>
 
 <div class="wrap">
@@ -142,6 +143,8 @@
   <div class="stat"><b>100+</b><span>Personal clients</span></div>
   <div class="stat"><b>25+</b><span>Brand partnerships</span></div>
 </div>
+
+<p style="text-align:center;color:var(--muted);font-size:13px;letter-spacing:.5px;margin:26px auto 0;max-width:600px;padding:0 20px">Trained by celebrity makeup artists <b style="color:var(--ink);font-weight:600">Mario Dedivanovic</b> &amp; <b style="color:var(--ink);font-weight:600">Patrick Ta</b></p>
 
 <div style="text-align:center;padding:50px 20px 0">
   <p style="font-size:12px;letter-spacing:4px;text-transform:uppercase;color:var(--muted);font-weight:600;margin-bottom:24px">As seen on</p>
@@ -200,7 +203,7 @@
   <p>Bridal season fills quickly and only a limited number of dates are taken each month. Brides: share your date on WhatsApp. Brands: request my rate card. ⚡ Same-day response, always.</p>
   <div class="cta-row" style="justify-content:center">
     <a class="btn white" href="contact.html">Contact Me</a>
-    <a class="btn wa" href="https://wa.me/971585588186">WhatsApp Booking</a>
+    <a class="btn wa" href="https://wa.me/971585588186?text=Hi%20Urooj%2C%20I%27d%20like%20to%20book%20makeup%20—%20here%27s%20my%20date%20and%20occasion%3A">WhatsApp Booking</a>
   </div>
 </div>
 
@@ -264,6 +267,10 @@
   }
   track.innerHTML=build()+build();
 })();
+</script>
+
+<script>
+(function(){var t=document.querySelector('.nav-toggle'),m=document.getElementById('navMenu');if(!t||!m)return;t.addEventListener('click',function(){var o=m.classList.toggle('open');t.setAttribute('aria-expanded',o);t.setAttribute('aria-label',o?'Close menu':'Open menu');});m.addEventListener('click',function(e){if(e.target.tagName==='A')m.classList.remove('open');});})();
 </script>
 
 </body>
