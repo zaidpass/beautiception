@@ -104,6 +104,8 @@
   @keyframes vidNudge{0%,100%{transform:translate(0,-50%)}50%{transform:translate(5px,-50%)}}
   /* What-to-expect steps — compact on mobile so all 3 fit one screen */
   @media(max-width:900px){
+    .bridal-sec{padding-bottom:18px}
+    .events-sec{padding-top:14px !important}
     .price-br{display:inline}
     .vid-arrow{display:flex;align-items:center;justify-content:center;position:absolute;top:44%;right:4px;transform:translateY(-50%);width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,.92);color:var(--rose-deep);font-size:24px;box-shadow:0 4px 14px rgba(51,39,42,.25);pointer-events:none;animation:vidNudge 1.4s ease-in-out infinite}
     .steps-block{padding-top:22px;padding-bottom:22px}
@@ -160,7 +162,7 @@
   <div class="avail" style="margin-top:22px"><span class="dot"></span> A limited number of bridal bookings taken each season — early dates recommended</div>
 </div>
 
-<section style="padding-top:4px">
+<section class="bridal-sec" style="padding-top:4px">
   <div class="wrap">
     <div class="sec-head"><h2>Bridal <em>makeup</em></h2></div>
     <div class="carousel">
@@ -180,7 +182,7 @@
   </div>
 </section>
 
-<section style="padding-top:30px">
+<section class="events-sec" style="padding-top:30px">
   <div class="wrap">
     <div class="sec-head"><h2>Events & <em>photoshoots</em></h2></div>
     <div class="carousel">
