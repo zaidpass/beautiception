@@ -22,15 +22,16 @@
 <meta name="twitter:description" content="Beauty, skincare, motherhood & hair UGC and brand collaborations across the UAE. Request the rate card.">
 <meta name="twitter:image" content="https://beautiception.com/photos/web/portrait.jpg">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css?v=2">
 <style>
   /* Campaign showcase — category tabs */
   .cat-row{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:40px}
-  .cat-card{border-radius:22px;padding:30px 24px;text-align:center;cursor:pointer;background:#fff;box-shadow:0 10px 34px rgba(51,39,42,.05);transition:.25s;border:2px solid transparent}
+  .cat-card{border-radius:22px;padding:26px 20px;text-align:center;cursor:pointer;background:#fff;box-shadow:0 10px 34px rgba(51,39,42,.05);transition:.25s;border:2px solid transparent;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:150px}
   .cat-card:hover{transform:translateY(-4px)}
   .cat-card.active{border-color:var(--rose-deep);background:linear-gradient(150deg,var(--rose),var(--rose-deep));color:#fff}
   .cat-card .icon{font-size:30px;display:block;margin-bottom:10px}
-  .cat-card h3{font-size:20px;margin-bottom:4px}
+  .cat-card h3{font-size:19px;margin-bottom:4px;line-height:1.2}
+  .panel{scroll-margin-top:90px}
   .cat-card p{font-size:13px;color:var(--muted)}
   .cat-card.active p{color:rgba(255,255,255,.85)}
   .panel{display:none}
@@ -193,7 +194,7 @@
 
     <div class="cat-row">
       <div class="cat-card active" onclick="showPanel('beauty',this)"><span class="icon">💄</span><h3>Beauty</h3><p>Makeup campaigns & tutorials</p></div>
-      <div class="cat-card" onclick="showPanel('skincare',this)"><span class="icon">✨</span><h3>Skincare and lifestyle</h3><p>Routines, product & lifestyle</p></div>
+      <div class="cat-card" onclick="showPanel('skincare',this)"><span class="icon">✨</span><h3>Skincare &amp; lifestyle</h3><p>Routines, product &amp; lifestyle</p></div>
       <div class="cat-card" onclick="showPanel('motherhood',this)"><span class="icon">🧸</span><h3>Motherhood</h3><p>Family & baby brand collabs</p></div>
       <div class="cat-card" onclick="showPanel('lifestyle',this)"><span class="icon">💇</span><h3>Hair</h3><p>Styling & transformations</p></div>
     </div>
@@ -236,8 +237,10 @@
 function showPanel(id, card){
   document.querySelectorAll('.panel').forEach(p=>p.classList.remove('show'));
   document.querySelectorAll('.cat-card').forEach(c=>c.classList.remove('active'));
-  document.getElementById(id).classList.add('show');
+  var panel=document.getElementById(id);
+  panel.classList.add('show');
   card.classList.add('active');
+  if(window.innerWidth<=900){setTimeout(function(){panel.scrollIntoView({behavior:'smooth',block:'start'});},60);}
 }
 </script>
 
@@ -247,7 +250,6 @@ function showPanel(id, card){
     <div class="acc-item">
       <div class="acc-head" onclick="this.parentNode.classList.toggle('open')">
         <h3>Rate <em>card</em></h3>
-        <span class="hint">Investment · all quotes custom</span>
         <span class="chev">▾</span>
       </div>
       <div class="acc-body">
