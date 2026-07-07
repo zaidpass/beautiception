@@ -135,6 +135,9 @@ footer a{color:var(--muted)}
   .grid,.grid.three{grid-template-columns:repeat(2,1fr)}
   .duo,.trio{grid-template-columns:1fr}
   .stats{flex-wrap:wrap;gap:26px}
+  section{padding:46px 0}
+  .sec-head{margin-bottom:28px}
+  .page-head{padding:40px 20px 26px}
   nav{flex-wrap:wrap;padding:14px 20px}
   nav .nav-toggle{display:flex;order:3}
   nav .btn.solid{order:2;margin-left:auto;margin-right:10px;padding:10px 20px}

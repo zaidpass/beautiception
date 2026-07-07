@@ -22,7 +22,7 @@
 <meta name="twitter:description" content="Beauty, skincare, motherhood & hair UGC and brand collaborations across the UAE. Request the rate card.">
 <meta name="twitter:image" content="https://beautiception.com/photos/web/portrait.jpg">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=2">
+<link rel="stylesheet" href="style.css?v=3">
 <style>
   /* Campaign showcase — category tabs */
   .cat-row{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:40px}
@@ -88,18 +88,19 @@
   .rate-terms p{font-size:14px;line-height:1.55;margin:0;color:rgba(255,255,255,.9)}
   .rate-terms a{color:#fff}
   @media(max-width:720px){
+    #ratecard .acc-head{display:none}
     #ratecard .acc-body{max-height:none}
-    #ratecard .acc-head{cursor:default;padding:20px 22px 8px}
-    #ratecard .acc-head .chev{display:none}
+    #ratecard .acc-body .inner{padding:14px 18px 18px}
     #ratecard .rate-eyebrow{display:none}
     #ratecard .rate-rows{gap:8px}
     #ratecard .rate-row{flex-direction:row;align-items:center;gap:10px;padding:12px 16px}
     #ratecard .rate-row p{display:none}
     #ratecard .rate-row h4{font-size:13.5px;margin-bottom:0;line-height:1.25}
     .rate-price{text-align:right}
-    .rate-terms{grid-template-columns:repeat(3,1fr);gap:11px;padding:18px 14px}
-    .rate-terms .lbl{font-size:9.5px;letter-spacing:.7px;margin-bottom:5px}
-    .rate-terms p{font-size:10.5px;line-height:1.4}
+    .rate-terms{grid-template-columns:repeat(2,1fr);gap:14px;padding:18px 16px}
+    .rate-terms > div:last-child{display:none}
+    .rate-terms .lbl{font-size:10px;letter-spacing:.7px;margin-bottom:5px}
+    .rate-terms p{font-size:11px;line-height:1.4}
   }
 </style>
 </head>
