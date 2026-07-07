@@ -137,6 +137,7 @@ footer a{color:var(--muted)}
   .stats{flex-wrap:wrap;gap:26px}
   section{padding:46px 0}
   .sec-head{margin-bottom:28px}
+  .sec-head h2{font-size:24px;white-space:nowrap}
   .page-head{padding:40px 20px 26px}
   nav{flex-wrap:wrap;padding:14px 20px}
   nav .nav-toggle{display:flex;order:3}
