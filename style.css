@@ -1,0 +1,142 @@
+/* BeautyByUrooj — Champagne Luxe shared styles */
+:root{
+  --bg:#faf6f0; --rose:#c9a87c; --rose-deep:#b08d57; --mauve:#a8794f;
+  --ink:#2e2a26; --soft:#f3ece2; --muted:#8a7f72;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Jost',sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+h1,h2,h3{font-family:'Cormorant Garamond',serif;font-weight:600}
+em{color:var(--rose-deep);font-style:italic}
+.wrap{max-width:1180px;margin:0 auto;padding:0 40px}
+
+/* Nav */
+nav{display:flex;justify-content:space-between;align-items:center;padding:24px 40px;position:sticky;top:0;background:rgba(253,248,246,.95);backdrop-filter:blur(8px);z-index:10}
+.logo{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:600;text-decoration:none;color:var(--ink)}
+.logo span{color:var(--rose-deep)}
+nav ul{display:flex;gap:32px;list-style:none}
+nav ul a{text-decoration:none;color:var(--ink);font-size:14px;font-weight:500}
+nav ul a:hover,nav ul a.active{color:var(--rose-deep)}
+
+/* Buttons */
+.btn{display:inline-block;padding:14px 32px;font-size:14px;font-weight:500;text-decoration:none;border-radius:100px;transition:.25s}
+.btn.solid{background:var(--rose-deep);color:#fff}
+.btn.solid:hover{background:var(--ink)}
+.btn.ghost{border:1.5px solid var(--rose-deep);color:var(--rose-deep)}
+.btn.ghost:hover{background:var(--rose-deep);color:#fff}
+.btn.white{background:#fff;color:var(--ink)}
+.btn.wa{background:#25a05a;color:#fff}
+.btn.wa:hover{background:var(--ink)}
+
+/* Page header (inner pages) */
+.page-head{text-align:center;padding:70px 20px 50px}
+.page-head .pill{margin-bottom:18px}
+.page-head h1{font-size:52px}
+.page-head p{color:var(--muted);max-width:540px;margin:14px auto 0}
+
+.pill{display:inline-block;background:var(--soft);color:var(--rose-deep);padding:8px 18px;border-radius:100px;font-size:13px;font-weight:500}
+
+/* Sections */
+section{padding:70px 0}
+.sec-head{text-align:center;margin-bottom:44px}
+.sec-head h2{font-size:38px}
+.sec-head p{color:var(--muted);margin-top:8px}
+
+/* Stats */
+.stats{display:flex;justify-content:center;gap:70px;padding:40px;background:#fff;border-radius:24px;margin:0 auto;max-width:1100px;box-shadow:0 10px 34px rgba(51,39,42,.06)}
+.stat{text-align:center}
+.stat b{font-family:'Cormorant Garamond',serif;font-size:32px;color:var(--rose-deep);display:block}
+.stat span{font-size:13px;color:var(--muted)}
+
+/* Portfolio tiles */
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.grid.three{grid-template-columns:repeat(3,1fr)}
+.tile{aspect-ratio:3/4;border-radius:22px;display:flex;align-items:flex-end;padding:18px;color:#fff;font-size:13px;font-weight:500;transition:.3s;text-decoration:none;position:relative}
+.tile:hover{transform:translateY(-5px)}
+.tile .tag{position:absolute;top:16px;left:16px;background:rgba(255,255,255,.22);backdrop-filter:blur(4px);padding:5px 12px;border-radius:100px;font-size:11px}
+.p1{background:linear-gradient(160deg,#d9b08c,#a8794f)} .p2{background:linear-gradient(160deg,#e8cfc4,#b98b74)}
+.p3{background:linear-gradient(160deg,#6b4f3f,#3d2e24)} .p4{background:linear-gradient(160deg,#c9a87c,#8a6a42)}
+.p5{background:linear-gradient(160deg,#e5c9b8,#a87c62)} .p6{background:linear-gradient(160deg,#4a3a30,#2e2a26)}
+.p7{background:linear-gradient(160deg,#d9bfa4,#9c7a54)} .p8{background:linear-gradient(160deg,#e8d5c0,#b89468)}
+
+/* Cards */
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+.trio{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{border-radius:26px;padding:44px;color:#fff}
+.card.rose{background:linear-gradient(150deg,var(--rose),var(--rose-deep))}
+.card.dark{background:var(--ink)}
+.card h3{font-size:28px;margin-bottom:12px}
+.card p{opacity:.85;margin-bottom:24px;font-size:15px}
+.card-lite{background:#fff;border-radius:22px;padding:34px;box-shadow:0 10px 34px rgba(51,39,42,.05)}
+.card-lite h3{font-size:22px;margin-bottom:10px}
+.card-lite p{color:var(--muted);font-size:15px}
+.card-lite .num{font-family:'Cormorant Garamond',serif;font-size:30px;color:var(--rose-deep);display:block;margin-bottom:8px}
+
+/* Price table */
+table{width:100%;max-width:740px;margin:0 auto;border-collapse:separate;border-spacing:0 10px}
+td{padding:18px 24px;background:#fff}
+tr td:first-child{border-radius:14px 0 0 14px;font-weight:500}
+tr td:last-child{border-radius:0 14px 14px 0;text-align:right;font-family:'Cormorant Garamond',serif;font-size:19px;color:var(--rose-deep)}
+td.mid{color:var(--muted);font-size:14px}
+
+/* Quotes */
+.quote{background:#fff;border-radius:22px;padding:32px}
+.quote .stars{color:var(--rose);letter-spacing:3px;margin-bottom:12px}
+.quote p{font-size:15px;margin-bottom:14px}
+.quote span{font-size:13px;color:var(--muted)}
+
+/* CTA band */
+.band{text-align:center;background:linear-gradient(150deg,var(--rose),var(--rose-deep));border-radius:34px;padding:70px 40px;color:#fff;margin:0 40px 70px}
+.band h2{font-size:40px;margin-bottom:12px}
+.band p{opacity:.9;max-width:480px;margin:0 auto 30px}
+
+/* Soft section */
+.soft-block{background:var(--soft);border-radius:34px;margin:0 40px}
+
+/* Forms */
+.form{max-width:560px;margin:0 auto;display:grid;gap:14px}
+.form input,.form select,.form textarea{width:100%;padding:16px 20px;border:1.5px solid #eadcd6;border-radius:14px;background:#fff;font-family:'Jost',sans-serif;font-size:15px;color:var(--ink)}
+.form input:focus,.form select:focus,.form textarea:focus{outline:none;border-color:var(--rose-deep)}
+.form label{font-size:13px;font-weight:500;margin-bottom:-8px}
+
+footer{padding:40px;display:flex;justify-content:space-between;color:var(--muted);font-size:14px}
+footer a{color:var(--muted)}
+
+.cta-row{display:flex;gap:14px;flex-wrap:wrap}
+
+/* Availability / scarcity note */
+.avail{display:inline-flex;align-items:center;gap:9px;font-size:13.5px;color:var(--ink);background:#fff;padding:9px 18px;border-radius:100px;box-shadow:0 6px 20px rgba(51,39,42,.07);font-weight:500}
+.avail .dot{width:8px;height:8px;border-radius:50%;background:#25a05a;position:relative;flex-shrink:0}
+.avail .dot::after{content:"";position:absolute;inset:-4px;border-radius:50%;background:#25a05a;opacity:.35;animation:availpulse 2s ease-out infinite}
+@keyframes availpulse{0%{transform:scale(.6);opacity:.5}100%{transform:scale(1.9);opacity:0}}
+
+/* Video hero frame */
+.hero-video{aspect-ratio:4/5;border-radius:30px;overflow:hidden;position:relative;background:#efe6da}
+.hero-video video{width:100%;height:100%;object-fit:cover;display:block}
+.hero-video::after{content:"";position:absolute;inset:0;border-radius:30px;box-shadow:inset 0 0 0 1px rgba(255,255,255,.25);pointer-events:none}
+
+/* Eyebrow label */
+.eyebrow{font-size:12px;letter-spacing:4px;text-transform:uppercase;color:var(--muted);font-weight:600;text-align:center}
+
+/* Brand roster — loud social proof */
+.roster{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:12px 0;max-width:920px;margin:0 auto}
+.roster span{font-family:'Cormorant Garamond',serif;font-size:23px;color:var(--muted);line-height:1}
+.roster span::after{content:"·";margin:0 26px;color:#d8c9ba}
+.roster span:last-child::after{content:""}
+
+/* Mini testimonials */
+.mini-quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:1040px;margin:0 auto}
+.mini-quotes .mq{background:#fff;border-radius:20px;padding:26px 28px;box-shadow:0 10px 34px rgba(51,39,42,.05)}
+.mini-quotes .mq .stars{color:var(--rose);letter-spacing:3px;margin-bottom:10px;font-size:13px}
+.mini-quotes .mq p{font-size:14.5px;margin-bottom:14px}
+.mini-quotes .mq span{font-size:12.5px;color:var(--muted)}
+@media(max-width:900px){.mini-quotes{grid-template-columns:1fr}.roster span{font-size:19px}.roster span::after{margin:0 16px}}
+
+@media(max-width:900px){
+  .grid,.grid.three{grid-template-columns:repeat(2,1fr)}
+  .duo,.trio{grid-template-columns:1fr}
+  .stats{flex-wrap:wrap;gap:26px}
+  nav ul{display:none}
+  .page-head h1{font-size:38px}
+  .band{margin:0 16px 50px}
+  .soft-block{margin:0 16px}
+}
