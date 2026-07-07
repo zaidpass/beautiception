@@ -176,4 +176,95 @@
             <tr><td>Bridal Makeup</td><td class="mid">Trial, full glam, touch-up kit</td><td>AED 1,800</td></tr>
             <tr><td>Engagement / Nikkah</td><td class="mid">Full glam + hair styling</td><td>AED 1,200</td></tr>
             <tr><td>Photoshoot Makeup</td><td class="mid">Camera-ready, on-set touch-ups</td><td>AED 800</td></tr>
-            <tr><td>Party Makeup</td><td class="mid">Soft or full glam</td><
+            <tr><td>Party Makeup</td><td class="mid">Soft or full glam</td><td>AED 600</td></tr>
+            <tr><td>Hair Styling (add-on)</td><td class="mid">Blowout, curls or updo</td><td>AED 300</td></tr>
+          </table>
+          <p style="text-align:center;margin-top:26px">
+            <a class="btn wa" href="https://wa.me/971585588186">💬 Book on WhatsApp</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="acc-item" id="lessons">
+      <div class="acc-head" onclick="this.parentNode.classList.toggle('open')">
+        <h3>Private makeup <em>lessons</em></h3>
+        <span class="hint">1:1 training · from AED 1,000</span>
+        <span class="chev">▾</span>
+      </div>
+      <div class="acc-body">
+        <div class="inner">
+          <p style="color:var(--muted);font-size:15px;margin-bottom:18px">Tips, tricks and techniques for long-lasting makeup — no product pushing, honest guidance across brands and skin tones.</p>
+          <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:18px" class="lesson-videos">
+            <video controls preload="metadata" poster="videos/lesson-poster-1.jpg" style="width:100%;aspect-ratio:9/16;object-fit:cover;border-radius:16px;background:#000"><source src="videos/lesson-video-1.mp4" type="video/mp4"></video>
+            <video controls preload="metadata" poster="videos/lesson-poster-2.jpg" style="width:100%;aspect-ratio:9/16;object-fit:cover;border-radius:16px;background:#000"><source src="videos/lesson-video-2.mp4" type="video/mp4"></video>
+            <video controls preload="metadata" poster="videos/lesson-poster-3.jpg" style="width:100%;aspect-ratio:9/16;object-fit:cover;border-radius:16px;background:#000"><source src="videos/lesson-video-3.mp4" type="video/mp4"></video>
+          </div>
+          <div class="lesson-grid">
+            <div class="card-lite"><span class="num">01</span><h3>Makeup Basics — AED 1,000</h3><p>Beginner-friendly steps for daytime and evening glam, easy wow-factor products, finding shades that match your skin, and making the most of products you already own. Beginner · 3 hours.</p></div>
+            <div class="card-lite"><span class="num">02</span><h3>Working Professionals — AED 1,000</h3><p>Dissect your routine using your own products, master the 10–20 minute express look and no-makeup makeup, learn to multi-task products on the go. Includes a takeaway guide. Beginner–Intermediate · 3 hours.</p></div>
+            <div class="card-lite"><span class="num">03</span><h3>Makeup Enthusiasts — AED 1,500</h3><p>Comprehensive curriculum covering the latest trends, product and skincare layering, advanced eye techniques, insights from celebrity artists, plus a tour of the full kit and lighting setup. Intermediate–Advanced · 3 hours.</p></div>
+            <div class="card-lite"><span class="num">04</span><h3>Virtual Consultation — AED 500/hr</h3><p>Your time, your questions — skincare layering, eye makeup for your eye shape, what to buy and what to skip. Any skill level, from the comfort of home.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head"><h2>Client <em>love</em></h2></div>
+    <div class="trio">
+      <div class="quote"><div class="stars">★★★★★</div><p>"Ok this was by far the best I have ever looked. No kidding! Your talent is magical. I got so many compliments. You're my go-to makeup artist — I'm never going to anyone else!"</p><span>Bisma</span></div>
+      <div class="quote"><div class="stars">★★★★★</div><p>"You absolutely killed it again! I was glowing all day and night thanks to you. Thank you for always coming through and being super sweet, easy and fun to work with!"</p><span>Rizwana</span></div>
+      <div class="quote"><div class="stars">★★★★★</div><p>"The makeup look was gorgeous and we received so many compliments — we got asked so many times who did our makeup."</p><span>Mashuda</span></div>
+    </div>
+    <div class="trio" style="margin-top:22px">
+      <div class="quote"><div class="stars">★★★★★</div><p>"I wanted to thank you a million! My makeup was flawless. Got so many compliments. Your hands are magic."</p><span>Mariam</span></div>
+      <div class="quote"><div class="stars">★★★★★</div><p>"Thank you so much beautiful! I haven't felt this fabulous in so long! You are so talented and such a great artist."</p><span>Chitra</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="band" style="background:linear-gradient(rgba(51,39,42,.5),rgba(51,39,42,.6)),url('photos/web/banner.jpg') center/cover no-repeat">
+  <h2>Your date is waiting</h2>
+  <p>Popular dates book out fast — especially Eid and wedding season. See prices and reserve yours. ⚡ Same-day response on WhatsApp.</p>
+  <div class="cta-row" style="justify-content:center">
+    <a class="btn white" href="contact.html">Book Now</a>
+    <a class="btn wa" href="https://wa.me/971585588186">WhatsApp Me</a>
+  </div>
+</div>
+
+<script>
+document.querySelectorAll('.carousel').forEach(car => {
+  const sc = car.querySelector('.photo-marquee');
+  let paused = false, resumeTimer;
+  const pause = () => { paused = true; clearTimeout(resumeTimer); resumeTimer = setTimeout(() => paused = false, 2500); };
+  ['pointerdown','wheel','touchstart'].forEach(ev => sc.addEventListener(ev, pause, {passive:true}));
+  sc.addEventListener('mouseenter', () => paused = true);
+  sc.addEventListener('mouseleave', () => paused = false);
+  car.querySelector('.car-btn.prev').addEventListener('click', () => { pause(); sc.scrollBy({left:-340, behavior:'smooth'}); });
+  car.querySelector('.car-btn.next').addEventListener('click', () => { pause(); sc.scrollBy({left:340, behavior:'smooth'}); });
+  const step = () => {
+    const half = sc.scrollWidth / 2;
+    if (sc.scrollLeft >= half) sc.scrollLeft -= half;
+    else if (sc.scrollLeft <= 0 && paused === false) { /* stay */ }
+    if (!paused) sc.scrollLeft += 0.6;
+    requestAnimationFrame(step);
+  };
+  requestAnimationFrame(step);
+});
+</script>
+
+<footer>
+  <span>© 2026 @BeaUrooj — Urooj Hussain</span>
+  <span><a href="https://www.instagram.com/beaurooj/">Instagram</a> · <a href="https://www.tiktok.com/@beaurooj">TikTok</a> · <a href="mailto:info@beautiception.com">info@beautiception.com</a></span>
+</footer>
+
+</body>
+</html>

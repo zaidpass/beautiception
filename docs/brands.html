@@ -195,4 +195,103 @@
 
     <div class="panel" id="lifestyle">
       <div class="camp-grid">
-        <div class="camp"><iframe src="https://www.instagram.com/reel/DSicMeZE6q9/embed/" style="width:100%;aspect-ratio:9/16;border:none;display:block" allow="fullscreen" title="Hair content by
+        <div class="camp"><iframe src="https://www.instagram.com/reel/DSicMeZE6q9/embed/" style="width:100%;aspect-ratio:9/16;border:none;display:block" allow="fullscreen" title="Hair content by @beaurooj"></iframe><div class="body"><span class="type">Hair · Reel</span><p>Hair content and styling — watch the reel above.</p></div></div>
+        <div class="camp"><iframe src="https://www.tiktok.com/embed/v2/7568949656022011143" style="width:100%;aspect-ratio:9/16;border:none;display:block" allow="fullscreen" title="Hair content by @beaurooj"></iframe><div class="body"><span class="type">Hair · TikTok</span><p>Hair content and styling — watch above.</p></div></div>
+        <div class="camp"><iframe src="https://www.tiktok.com/embed/v2/7643149990826626312" style="width:100%;aspect-ratio:9/16;border:none;display:block" allow="fullscreen" title="Hair content by @BeaUrooj"></iframe><div class="body"><span class="type">Hair · TikTok</span><p>Hair content and styling — watch above.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+function showPanel(id, card){
+  document.querySelectorAll('.panel').forEach(p=>p.classList.remove('show'));
+  document.querySelectorAll('.cat-card').forEach(c=>c.classList.remove('active'));
+  document.getElementById(id).classList.add('show');
+  card.classList.add('active');
+}
+</script>
+
+<div class="band" style="background:linear-gradient(rgba(51,39,42,.5),rgba(51,39,42,.6)),url('photos/web/banner.jpg') center/cover no-repeat">
+  <h2>Let's build your campaign</h2>
+  <p>Request my rate card for full audience insights, content formats and pricing. ⚡ Same-day response to every inquiry.</p>
+  <div class="cta-row" style="justify-content:center">
+    <a class="btn white" href="contact.html">Request Rate Card</a>
+    <a class="btn wa" href="https://wa.me/971585588186">WhatsApp Inquiry</a>
+  </div>
+</div>
+
+<footer>
+  <span>© 2026 @BeaUrooj — Urooj Hussain</span>
+  <span><a href="https://www.instagram.com/beaurooj/">Instagram</a> · <a href="https://www.tiktok.com/@beaurooj">TikTok</a> · <a href="mailto:info@beautiception.com">info@beautiception.com</a></span>
+</footer>
+
+<script>
+(function(){
+  var brands=[
+    ['Sephora','logos/Sephora.png'],
+    ['Anastasia Beverly Hills','logos/Anastasiabeverlyhills.png'],
+    ['Pampers','https://fr.wikipedia.org/wiki/Special:FilePath/Logo_Pampers.svg'],
+    ['Philips','https://commons.wikimedia.org/wiki/Special:FilePath/Philips_logo_new.svg'],
+    ['Erborian','logos/erborian.png'],
+    ['UppaBaby','logos/Uppababy.png'],
+    ['Flormar','https://commons.wikimedia.org/wiki/Special:FilePath/Logo_Flormar_.png'],
+    ['YSL Beauty','logos/ysl.png'],
+    ['Doona','logos/Doona.png'],
+    ['Foreo','logos/foreo.png'],
+    ['Pureborn','logos/Pureborn.png'],
+    ['Lilly Lashes','logos/Lillylashes.png'],
+    ['Huda Beauty','logos/huda-beauty.png'],
+    ['Fenty Beauty','logos/fenty-beauty.png'],
+    ['Charlotte Tilbury','logos/charlotte-tilbury.png'],
+    ['Kayali','logos/kayali.png'],
+    ['Armani Beauty','logos/armani-beauty.png'],
+    ['Givenchy','logos/givenchy.png'],
+    ['Prada Beauty','logos/prada-beauty.png'],
+    ['Estée Lauder','logos/estee-lauder.png'],
+    ['Lancôme','logos/lancome.png'],
+    ['Clinique','logos/clinique.png'],
+    ['Kiehl’s','logos/kiehls.png'],
+    ['L’Oréal','logos/loreal.png'],
+    ['SkinCeuticals','logos/skinceuticals.png'],
+    ['La Roche-Posay','logos/la-roche-posay.png'],
+    ['Vichy','logos/vichy.png'],
+    ['Avène','logos/avene.png'],
+    ['Bioderma','logos/bioderma.png'],
+    ['Dr Jart+','logos/dr-jart.png'],
+    ['Tatcha','logos/tatcha.png'],
+    ['Drunk Elephant','logos/drunk-elephant.png'],
+    ['The Ordinary','logos/the-ordinary.png'],
+    ['Good Molecules','logos/good-molecules.png'],
+    ['Youth To The People','logos/youth-to-the-people.png'],
+    ['Vaseline','logos/vaseline.png'],
+    ['Pixi','logos/pixi.png']
+  ];
+  var track=document.getElementById('brandTrack');
+  if(!track) return;
+  function build(){
+    return brands.map(function(b){
+      var s=/^https?:/.test(b[1])?b[1]:b[1].replace('logos/','logos/clean/');
+      return '<span class="marq-logo"><img src="'+s+'" alt="'+b[0]+'" loading="lazy" onerror="this.style.display=\'none\';this.parentNode.insertAdjacentHTML(\'beforeend\',\'<span class=&quot;logo-placeholder&quot;>'+b[0]+'</span>\');"></span>';
+    }).join('');
+  }
+  track.innerHTML=build()+build();
+})();
+</script>
+
+<script>
+(function(){
+  var ph=document.querySelector('.page-head'),
+      camp=document.querySelector('section'),
+      stats=document.querySelector('.stats'),
+      logos=document.querySelector('.logos-sec');
+  if(ph&&camp&&stats&&logos){
+    ph.insertAdjacentElement('afterend',camp);
+    camp.insertAdjacentElement('afterend',stats);
+    stats.insertAdjacentElement('afterend',logos);
+  }
+})();
+</script>
+
+</body>
+</html>
