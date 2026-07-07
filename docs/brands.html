@@ -87,7 +87,20 @@
   .rate-terms .lbl{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.55);display:block;margin-bottom:9px}
   .rate-terms p{font-size:14px;line-height:1.55;margin:0;color:rgba(255,255,255,.9)}
   .rate-terms a{color:#fff}
-  @media(max-width:720px){.rate-row{flex-direction:column;align-items:flex-start;gap:8px}.rate-price{text-align:left}.rate-terms{grid-template-columns:1fr;gap:20px}}
+  @media(max-width:720px){
+    #ratecard .acc-body{max-height:none}
+    #ratecard .acc-head{cursor:default;padding:20px 22px 8px}
+    #ratecard .acc-head .chev{display:none}
+    #ratecard .rate-eyebrow{display:none}
+    #ratecard .rate-rows{gap:8px}
+    #ratecard .rate-row{flex-direction:row;align-items:center;gap:10px;padding:12px 16px}
+    #ratecard .rate-row p{display:none}
+    #ratecard .rate-row h4{font-size:13.5px;margin-bottom:0;line-height:1.25}
+    .rate-price{text-align:right}
+    .rate-terms{grid-template-columns:repeat(3,1fr);gap:11px;padding:18px 14px}
+    .rate-terms .lbl{font-size:9.5px;letter-spacing:.7px;margin-bottom:5px}
+    .rate-terms p{font-size:10.5px;line-height:1.4}
+  }
 </style>
 </head>
 <body>

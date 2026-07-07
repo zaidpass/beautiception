@@ -53,7 +53,12 @@
   .about-img{aspect-ratio:4/5;border-radius:30px;background:linear-gradient(160deg,#e8cfc4,#c9a87c 70%,#8a6a42);display:flex;align-items:center;justify-content:center;color:#fff;font-size:13px;letter-spacing:2px;text-transform:uppercase}
   .about-copy p{color:var(--muted);margin-bottom:18px;font-size:16px}
   .about-copy p b{color:var(--ink)}
-  @media(max-width:900px){.about-grid{grid-template-columns:1fr}}
+  @media(max-width:900px){
+    .about-grid{grid-template-columns:1fr}
+    .cred-scroll{display:flex;overflow-x:auto;gap:14px;scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch;padding-bottom:6px}
+    .cred-scroll::-webkit-scrollbar{display:none}
+    .cred-scroll .card-lite{flex:0 0 78%;scroll-snap-align:center;min-height:360px !important}
+  }
 </style>
 </head>
 <body>
@@ -96,7 +101,7 @@
 <section class="soft-block">
   <div class="wrap">
     <div class="sec-head"><h2>Credentials & <em>training</em></h2><p>10+ years as a professional makeup artist — and always still learning</p></div>
-    <div class="trio">
+    <div class="trio cred-scroll">
       <div class="card-lite" style="background:linear-gradient(rgba(51,39,42,.35),rgba(51,39,42,.78)),url('photos/web/credential-01.jpg') center/cover no-repeat;color:#fff;min-height:420px;display:flex;flex-direction:column;justify-content:flex-end">
         <span class="num" style="color:#fff;opacity:.85">01</span><h3 style="color:#fff">Trained by the Best</h3><p style="color:rgba(255,255,255,.85)">Training from renowned celebrity and international artists including Mario Dedivanovic, Patrick Ta, Kennedy Hoffman and Tatti Bueno.</p>
       </div>

@@ -106,6 +106,29 @@
     .steps .card-lite .num{font-size:22px;margin-bottom:2px}
     .steps .card-lite h3{font-size:17px;margin-bottom:4px}
     .steps .card-lite p{font-size:13px;line-height:1.45}
+
+    /* Services & pricing — tighter rows + smaller header */
+    #pricing .acc-head{padding:16px 20px}
+    #pricing .acc-head h3{font-size:19px}
+    #pricing .acc-head .hint{display:none}
+    #pricing table{border-spacing:0 6px}
+    #pricing td{padding:11px 16px;font-size:13.5px}
+    #pricing tr td:last-child{font-size:15px}
+
+    /* Lesson videos — horizontal scroll */
+    .lesson-videos{display:flex !important;overflow-x:auto;gap:12px;scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+    .lesson-videos::-webkit-scrollbar{display:none}
+    .lesson-videos video{flex:0 0 62%;scroll-snap-align:center}
+
+    /* Lesson cards — collapsible sub-buttons */
+    .lesson-grid{gap:8px}
+    .lesson-item{cursor:pointer;position:relative;padding:14px 40px 14px 18px}
+    .lesson-item .num{display:none}
+    .lesson-item h3{font-size:15px;margin:0}
+    .lesson-item .lesson-detail{display:none;margin-top:8px;font-size:13px}
+    .lesson-item.open .lesson-detail{display:block}
+    .lesson-item::after{content:"▾";position:absolute;right:16px;top:15px;color:var(--rose-deep);transition:transform .3s;font-size:14px}
+    .lesson-item.open::after{transform:rotate(180deg)}
   }
 </style>
 </head>
@@ -231,10 +254,10 @@
             <video controls preload="metadata" poster="videos/lesson-poster-3.jpg" style="width:100%;aspect-ratio:9/16;object-fit:cover;border-radius:16px;background:#000"><source src="videos/lesson-video-3.mp4" type="video/mp4"></video>
           </div>
           <div class="lesson-grid">
-            <div class="card-lite"><span class="num">01</span><h3>Makeup Basics — AED 1,000</h3><p>Beginner-friendly steps for daytime and evening glam, easy wow-factor products, finding shades that match your skin, and making the most of products you already own. Beginner · 3 hours.</p></div>
-            <div class="card-lite"><span class="num">02</span><h3>Working Professionals — AED 1,000</h3><p>Dissect your routine using your own products, master the 10–20 minute express look and no-makeup makeup, learn to multi-task products on the go. Includes a takeaway guide. Beginner–Intermediate · 3 hours.</p></div>
-            <div class="card-lite"><span class="num">03</span><h3>Makeup Enthusiasts — AED 1,500</h3><p>Comprehensive curriculum covering the latest trends, product and skincare layering, advanced eye techniques, insights from celebrity artists, plus a tour of the full kit and lighting setup. Intermediate–Advanced · 3 hours.</p></div>
-            <div class="card-lite"><span class="num">04</span><h3>Virtual Consultation — AED 500/hr</h3><p>Your time, your questions — skincare layering, eye makeup for your eye shape, what to buy and what to skip. Any skill level, from the comfort of home.</p></div>
+            <div class="card-lite lesson-item" onclick="this.classList.toggle('open')"><span class="num">01</span><h3>Makeup Basics — AED 1,000</h3><p class="lesson-detail">Beginner-friendly steps for daytime and evening glam, easy wow-factor products, finding shades that match your skin, and making the most of products you already own. Beginner · 3 hours.</p></div>
+            <div class="card-lite lesson-item" onclick="this.classList.toggle('open')"><span class="num">02</span><h3>Working Professionals — AED 1,000</h3><p class="lesson-detail">Dissect your routine using your own products, master the 10–20 minute express look and no-makeup makeup, learn to multi-task products on the go. Includes a takeaway guide. Beginner–Intermediate · 3 hours.</p></div>
+            <div class="card-lite lesson-item" onclick="this.classList.toggle('open')"><span class="num">03</span><h3>Makeup Enthusiasts — AED 1,500</h3><p class="lesson-detail">Comprehensive curriculum covering the latest trends, product and skincare layering, advanced eye techniques, insights from celebrity artists, plus a tour of the full kit and lighting setup. Intermediate–Advanced · 3 hours.</p></div>
+            <div class="card-lite lesson-item" onclick="this.classList.toggle('open')"><span class="num">04</span><h3>Virtual Consultation — AED 500/hr</h3><p class="lesson-detail">Your time, your questions — skincare layering, eye makeup for your eye shape, what to buy and what to skip. Any skill level, from the comfort of home.</p></div>
           </div>
         </div>
       </div>
