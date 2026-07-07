@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Beauty Content Creator & UGC Creator Dubai UAE — @BeaUrooj</title>
+<title>Beauty Content Creator & UGC Creator Dubai UAE — @beaUrooj</title>
 <meta name="description" content="Beauty, skincare, motherhood & hair content creator in the UAE. UGC, campaigns & brand collaborations with an engaged Dubai audience. Request the rate card.">
 <meta name="keywords" content="beauty content creator UAE, UGC creator Dubai, beauty influencer Dubai, brand collaboration Dubai, makeup content creator Middle East, skincare influencer UAE, motherhood influencer Dubai, hair influencer UAE">
 <meta name="robots" content="index,follow">
@@ -11,14 +11,14 @@
 <meta name="geo.placename" content="Dubai, Abu Dhabi">
 <link rel="canonical" href="https://beautiception.com/brands.html">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="Urooj Hussain — @BeaUrooj Makeup Artist">
-<meta property="og:title" content="Beauty Content Creator & UGC Creator Dubai UAE — @BeaUrooj">
+<meta property="og:site_name" content="Urooj Hussain — @beaUrooj Makeup Artist">
+<meta property="og:title" content="Beauty Content Creator & UGC Creator Dubai UAE — @beaUrooj">
 <meta property="og:description" content="Beauty, skincare, motherhood & hair UGC and brand collaborations with an engaged Dubai & UAE audience. Request the rate card.">
 <meta property="og:image" content="https://beautiception.com/photos/web/portrait.jpg">
 <meta property="og:url" content="https://beautiception.com/brands.html">
 <meta property="og:locale" content="en_AE">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Beauty Content Creator & UGC Creator Dubai UAE — @BeaUrooj">
+<meta name="twitter:title" content="Beauty Content Creator & UGC Creator Dubai UAE — @beaUrooj">
 <meta name="twitter:description" content="Beauty, skincare, motherhood & hair UGC and brand collaborations across the UAE. Request the rate card.">
 <meta name="twitter:image" content="https://beautiception.com/photos/web/portrait.jpg">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -63,16 +63,40 @@
   .page-head + section{padding:16px 0 48px}
   .stats{margin-top:0}
   .logos-sec{margin-top:36px}
+
+  /* Collapsible Rate Card */
+  .acc-item{max-width:980px;margin:0 auto;background:#fff;border-radius:24px;box-shadow:0 10px 34px rgba(51,39,42,.05);overflow:hidden}
+  .acc-head{display:flex;align-items:center;gap:18px;padding:26px 30px;cursor:pointer;transition:.2s}
+  .acc-head:hover{background:var(--soft)}
+  .acc-head h3{font-size:22px;flex:1}
+  .acc-head .hint{color:var(--muted);font-size:14px;margin-right:12px}
+  .acc-head .chev{width:34px;height:34px;border-radius:50%;background:var(--soft);color:var(--rose-deep);display:flex;align-items:center;justify-content:center;font-size:16px;transition:.3s;flex-shrink:0}
+  .acc-item.open .acc-head .chev{transform:rotate(180deg);background:var(--rose-deep);color:#fff}
+  .acc-body{max-height:0;overflow:hidden;transition:max-height .5s ease}
+  .acc-item.open .acc-body{max-height:1700px}
+  .acc-body .inner{padding:0 30px 30px}
+  .rate-eyebrow{font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--muted);font-weight:600;margin-bottom:16px}
+  .rate-rows{display:flex;flex-direction:column;gap:12px}
+  .rate-row{display:flex;justify-content:space-between;align-items:center;gap:24px;background:var(--soft);border-radius:16px;padding:20px 26px}
+  .rate-row h4{font-size:16px;margin-bottom:5px}
+  .rate-row p{color:var(--muted);font-size:13.5px;line-height:1.5;margin:0}
+  .rate-price{text-align:right;font-family:'Jost',sans-serif;font-size:13px;font-weight:600;color:var(--ink);white-space:nowrap;flex-shrink:0;line-height:1.2}
+  .rate-price span{display:block;font-family:'Jost',sans-serif;font-size:10px;font-weight:400;color:var(--muted);letter-spacing:.5px}
+  .rate-terms{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;background:var(--ink);color:#fff;border-radius:18px;padding:28px 32px;margin-top:22px}
+  .rate-terms .lbl{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.55);display:block;margin-bottom:9px}
+  .rate-terms p{font-size:14px;line-height:1.55;margin:0;color:rgba(255,255,255,.9)}
+  .rate-terms a{color:#fff}
+  @media(max-width:720px){.rate-row{flex-direction:column;align-items:flex-start;gap:8px}.rate-price{text-align:left}.rate-terms{grid-template-columns:1fr;gap:20px}}
 </style>
 </head>
 <body>
 
 <nav>
-  <a class="logo" href="index.html">@Bea<span>Urooj</span></a>
+  <a class="logo" href="index.html">@bea<span>Urooj</span></a>
   <ul>
     <li><a href="index.html">Home</a></li>
-    <li><a class="active" href="brands.html">Brand Partnerships</a></li>
-    <li><a href="clients.html">Client Portfolio</a></li>
+    <li><a class="active" href="brands.html">For Brands</a></li>
+    <li><a href="clients.html">For Clients</a></li>
     <li><a href="about.html">About Me</a></li>
     <li><a href="contact.html">Contact</a></li>
   </ul>
@@ -81,7 +105,7 @@
 
 <div class="page-head">
   <div class="pill">For Brands & Agencies</div>
-  <h1>Brand <em>Partnerships</em></h1>
+  <h1>For <em>Brands</em></h1>
   <p>Campaigns, UGC and collaborations as a beauty content creator in Dubai & the UAE — reaching an engaged beauty, skincare, motherhood and hair audience across the UAE and Canada.</p>
   <div class="avail" style="margin-top:22px"><span class="dot"></span> Selectively partnering with a small number of brands that align with my values</div>
 </div>
@@ -179,17 +203,17 @@
 
     <div class="panel" id="skincare">
       <div class="camp-grid">
-        <div class="camp"><iframe src="https://www.tiktok.com/embed/v2/7527732145335454981" style="width:100%;aspect-ratio:9/16;border:none;display:block" allow="fullscreen" title="Erborian collaboration by @beaurooj"></iframe><div class="body"><span class="type">Erborian · TikTok</span><p>Brand collaboration for Erborian — watch above.</p></div></div>
-        <div class="camp"><iframe src="https://www.tiktok.com/embed/v2/7608239961975885064" style="width:100%;aspect-ratio:9/16;border:none;display:block" allow="fullscreen" title="Skincare & lifestyle content by @BeaUrooj"></iframe><div class="body"><span class="type">TikTok</span><p>Skincare &amp; lifestyle content — watch above.</p></div></div>
-        <div class="camp"><iframe src="https://www.instagram.com/reel/DXpDF1bDHEz/embed/" style="width:100%;aspect-ratio:9/16;border:none;display:block" allow="fullscreen" title="Philips collaboration by @BeaUrooj"></iframe><div class="body"><span class="type">Philips · Reel</span><p>Brand collaboration for Philips — watch the reel above.</p></div></div>
+        <div class="camp"><iframe src="https://www.tiktok.com/embed/v2/7527732145335454981" style="width:100%;aspect-ratio:9/16;border:none;display:block" allow="fullscreen" title="Erborian collaboration by @beaurooj"></iframe><div class="body"><span class="type">Erborian</span><p>Promoting summer skincare essentials</p></div></div>
+        <div class="camp"><iframe src="https://www.tiktok.com/embed/v2/7608239961975885064" style="width:100%;aspect-ratio:9/16;border:none;display:block" allow="fullscreen" title="Skincare & lifestyle content by @beaUrooj"></iframe><div class="body"><span class="type">Eid Campaign</span><p>Viral Eid hair tutorial</p></div></div>
+        <div class="camp"><iframe src="https://www.instagram.com/reel/DXpDF1bDHEz/embed/" style="width:100%;aspect-ratio:9/16;border:none;display:block" allow="fullscreen" title="Philips collaboration by @beaUrooj"></iframe><div class="body"><span class="type">Philips</span><p>Promoting product “Philips Facial Hair Remover”</p></div></div>
       </div>
     </div>
 
     <div class="panel" id="motherhood">
       <div class="camp-grid">
         <div class="camp"><iframe src="https://www.tiktok.com/embed/v2/7631289415284854024" style="width:100%;aspect-ratio:9/16;border:none;display:block" allow="fullscreen" title="Pampers collaboration by @beaurooj"></iframe><div class="body"><span class="type">Pampers</span><p>New product launch - Pampers Luxury diapers</p></div></div>
-        <div class="camp"><div class="visual" style="background:linear-gradient(150deg,#e8cfc0,#c08668)">Doona</div><div class="body"><span class="type">Placeholder · Integration</span><p>Campaign snippet — swap in real collab video/photos & results.</p></div></div>
-        <div class="camp"><iframe src="https://www.instagram.com/reel/DMDe9xdPPuy/embed/" style="width:100%;aspect-ratio:9/16;border:none;display:block" allow="fullscreen" title="UppaBaby collaboration by @beaurooj"></iframe><div class="body"><span class="type">UppaBaby · Reel</span><p>Brand collaboration for UppaBaby — watch the reel above.</p></div></div>
+        <div class="camp"><iframe src="https://www.instagram.com/reel/C92fCG8voUz/embed/" style="width:100%;aspect-ratio:9/16;border:none;display:block" allow="fullscreen" title="Pureborn collaboration by @beaurooj"></iframe><div class="body"><span class="type">Pureborn</span><p>Newborn diaper campaign</p></div></div>
+        <div class="camp"><iframe src="https://www.instagram.com/reel/DMDe9xdPPuy/embed/" style="width:100%;aspect-ratio:9/16;border:none;display:block" allow="fullscreen" title="UppaBaby collaboration by @beaurooj"></iframe><div class="body"><span class="type">UppaBaby</span><p>Product promotion “UppaBaby Minu” travel stroller</p></div></div>
       </div>
     </div>
 
@@ -197,7 +221,7 @@
       <div class="camp-grid">
         <div class="camp"><iframe src="https://www.instagram.com/reel/DSicMeZE6q9/embed/" style="width:100%;aspect-ratio:9/16;border:none;display:block" allow="fullscreen" title="Hair content by @beaurooj"></iframe><div class="body"><span class="type">Hair · Reel</span><p>Hair content and styling — watch the reel above.</p></div></div>
         <div class="camp"><iframe src="https://www.tiktok.com/embed/v2/7568949656022011143" style="width:100%;aspect-ratio:9/16;border:none;display:block" allow="fullscreen" title="Hair content by @beaurooj"></iframe><div class="body"><span class="type">Hair · TikTok</span><p>Hair content and styling — watch above.</p></div></div>
-        <div class="camp"><iframe src="https://www.tiktok.com/embed/v2/7643149990826626312" style="width:100%;aspect-ratio:9/16;border:none;display:block" allow="fullscreen" title="Hair content by @BeaUrooj"></iframe><div class="body"><span class="type">Hair · TikTok</span><p>Hair content and styling — watch above.</p></div></div>
+        <div class="camp"><iframe src="https://www.tiktok.com/embed/v2/7643149990826626312" style="width:100%;aspect-ratio:9/16;border:none;display:block" allow="fullscreen" title="Hair content by @beaUrooj"></iframe><div class="body"><span class="type">Hair · TikTok</span><p>Hair content and styling — watch above.</p></div></div>
       </div>
     </div>
   </div>
@@ -212,6 +236,47 @@ function showPanel(id, card){
 }
 </script>
 
+<section id="ratecard" style="padding-top:10px">
+  <div class="wrap">
+    <div class="sec-head"><h2>Rate <em>card</em></h2><p>Custom pricing for each collaboration based on scope and terms</p></div>
+    <div class="acc-item">
+      <div class="acc-head" onclick="this.parentNode.classList.toggle('open')">
+        <h3>Rate <em>card</em></h3>
+        <span class="hint">Investment · all quotes custom</span>
+        <span class="chev">▾</span>
+      </div>
+      <div class="acc-body">
+        <div class="inner">
+          <p class="rate-eyebrow">Investment — pricing on request</p>
+          <div class="rate-rows">
+            <div class="rate-row">
+              <div><h4>1 × Instagram Reel or TikTok Video</h4><p>Content creation + posting to committed channels. Cross-posting (same content, both platforms) included at the same rate.</p></div>
+              <div class="rate-price">On Request<span>custom quote</span></div>
+            </div>
+            <div class="rate-row">
+              <div><h4>Usage Rights — Organic</h4><p>Syndication on the brand's owned channels (reposts, brand pages).</p></div>
+              <div class="rate-price">On Request<span>custom quote</span></div>
+            </div>
+            <div class="rate-row">
+              <div><h4>Usage Rights — Paid / Whitelisted</h4><p>Content used in paid advertising or boosted through the influencer's handle.</p></div>
+              <div class="rate-price">On Request<span>custom quote</span></div>
+            </div>
+            <div class="rate-row">
+              <div><h4>Multi-Post Packages</h4><p>3–5 video packages available with volume pricing & campaign coordination.</p></div>
+              <div class="rate-price">On Request<span>custom quote</span></div>
+            </div>
+          </div>
+          <div class="rate-terms">
+            <div><span class="lbl">Payment Terms</span><p>100% due 30 days from invoice date, issued after content goes live.</p></div>
+            <div><span class="lbl">Approval &amp; Revisions</span><p>3 business days approval window. 1 round of edits included per video.</p></div>
+            <div><span class="lbl">Contact</span><p><a href="mailto:info@beautiception.com">info@beautiception.com</a></p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <div class="band" style="background:linear-gradient(rgba(51,39,42,.5),rgba(51,39,42,.6)),url('photos/web/banner.jpg') center/cover no-repeat">
   <h2>Let's build your campaign</h2>
   <p>Request my rate card for full audience insights, content formats and pricing. ⚡ Same-day response to every inquiry.</p>
@@ -221,8 +286,12 @@ function showPanel(id, card){
   </div>
 </div>
 
+<a class="wa-float" href="https://wa.me/971585588186" target="_blank" rel="noopener" aria-label="Message on WhatsApp">
+  <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16.003 3C9.373 3 4 8.373 4 15c0 2.65.86 5.1 2.32 7.09L4 29l7.09-2.28A11.9 11.9 0 0 0 16 27c6.627 0 12-5.373 12-12S22.63 3 16.003 3zm0 21.8c-1.77 0-3.42-.5-4.82-1.36l-.35-.2-4.2 1.35 1.36-4.1-.22-.36A9.77 9.77 0 0 1 6.2 15c0-5.4 4.4-9.8 9.8-9.8s9.8 4.4 9.8 9.8-4.4 9.8-9.8 9.8zm5.4-7.34c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.64-2.05-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.6-.92-2.2-.24-.58-.48-.5-.66-.5l-.57-.01c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.47 0 1.46 1.06 2.87 1.2 3.07.15.2 2.1 3.2 5.1 4.5.7.3 1.26.48 1.7.62.7.22 1.35.2 1.86.12.57-.08 1.75-.72 2-1.4.25-.7.25-1.28.17-1.4-.07-.13-.27-.2-.57-.35z"/></svg>
+</a>
+
 <footer>
-  <span>© 2026 @BeaUrooj — Urooj Hussain</span>
+  <span>© 2026 @beaUrooj — Urooj Hussain</span>
   <span><a href="https://www.instagram.com/beaurooj/">Instagram</a> · <a href="https://www.tiktok.com/@beaurooj">TikTok</a> · <a href="mailto:info@beautiception.com">info@beautiception.com</a></span>
 </footer>
 

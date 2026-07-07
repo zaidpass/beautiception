@@ -140,3 +140,11 @@ footer a{color:var(--muted)}
   .band{margin:0 16px 50px}
   .soft-block{margin:0 16px}
 }
+
+/* Floating WhatsApp button (all pages) */
+.wa-float{position:fixed;right:22px;bottom:22px;z-index:900;width:58px;height:58px;border-radius:50%;background:#25d366;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 28px rgba(37,211,102,.45);transition:transform .2s;text-decoration:none}
+.wa-float:hover{transform:scale(1.08)}
+.wa-float svg{width:32px;height:32px;fill:#fff}
+.wa-float::after{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid #25d366;opacity:.5;animation:waPulse 2.4s ease-out infinite}
+@keyframes waPulse{0%{transform:scale(1);opacity:.5}100%{transform:scale(1.6);opacity:0}}
+@media(max-width:600px){.wa-float{width:54px;height:54px;right:16px;bottom:16px}.wa-float svg{width:29px;height:29px}}
